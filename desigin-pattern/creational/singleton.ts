@@ -10,8 +10,9 @@ class MongoDb {
 }
 
 /**
- * Usefull when accessing shared resource. Saying the code base should have single instance and 
+ * 1. Useful when accessing shared resources. Saying the code base should have a single instance and 
  * all the code will get that instance to play around.
+ * 2. It can be used as a global variable by overriding its value should be restricted.
  */
 
 
