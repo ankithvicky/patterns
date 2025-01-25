@@ -5,6 +5,8 @@ Builder interface - declare steps to build product.
 Concrete builder - Adhere to the builder interface. Return different types of product. 
 Director - Use builder to create required product. Builder will be passed as constructor parameter.
 
+Advantage
+Remove the issue of telescopic constructor. 
 */
 
 // To over come telescope constructor or constructor with huge parameter we will be using builder pattern.
