@@ -1,5 +1,12 @@
 /**
- * Prototype pattern is useful to close an existing object. Client code will be depend on the interface than the concrete class.
+Procedure
+1. Create a common interface for cloning which all the concrete classes will use for cloning
+2. Concrete class must have a prototype constructor to create a clone of it.
+3. The Clone method will call the prototype constructor to create a clone.
+4. If it's a subclass the clone should call the superclass to clone its private variables.
+5. Additionally we can have a repository (Hashmap) to store the frequently accessed prototypes.
+
+* A prototype pattern is useful for closing an existing object. Client code will depend on the interface rather than the concrete class.
  */
 
 interface IClone {
@@ -16,7 +23,7 @@ abstract class Shape {
     }
 }
 
-class Rectange extends Shape implements IClone {
+class Rectangle extends Shape implements IClone {
     length: number | undefined;
     height: number | undefined;
     constructor(data: Rectange | null) {
@@ -62,7 +69,7 @@ smallCircle.y = 0;
 
 const prototypeFactory = new PrototypeFactory();
 prototypeFactory.addProtoType("smallCircle", smallCircle);
-const smallRectangle = new Rectange(null);
+const smallRectangle = new Rectangle(null);
 smallRectangle.x = 10;
 smallRectangle.y = 10;
 smallRectangle.length = 10;
