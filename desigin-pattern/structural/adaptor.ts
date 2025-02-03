@@ -5,6 +5,11 @@ Procedure
 3. The client will provide an interface that the adopter will implement.
 4. The concrete adopter implements the client interface. So that the client can communicate with any adopter.
 5. The adopter wraps the service object and communicates with it in their format.
+
+Client - Client interface -> Concrete adopter -> Service class
+Payment service (client) -> Create order (client interface) -> Razorpay payment adopter (Concrete adopter)
+Payment service (client) -> Create order (client interface) -> Paypal payment adopter (Concrete adopter)
+
 */
 
 class RoundHole {
