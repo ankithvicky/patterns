@@ -1,3 +1,12 @@
+/**
+Procedure
+1. The client will not talk to the service directly.
+2. The client will not be dependent on the concrete adopter as well.
+3. The client will provide an interface that the adopter will implement.
+4. The concrete adopter implements the client interface. So that the client can communicate with any adopter.
+5. The adopter wraps the service object and communicates with it in their format.
+*/
+
 class RoundHole {
   radius: number;
   constructor(radius: number) {
