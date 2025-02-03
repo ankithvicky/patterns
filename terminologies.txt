@@ -1,1 +1,10 @@
 layered architecture - https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html
+Master slave
+TCP / UDP
+Pipe-and-Filter Architecture
+Broker Architecture
+Peer-to-Peer Architecture
+Event-Driven Architecture
+MVC / MVP / MVVM
+Microkernel Architecture
+Interpreter Architecture
